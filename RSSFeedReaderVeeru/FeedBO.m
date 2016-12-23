@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  FeedBO.m
 //  RSSFeedReaderVeeru
 //
 //  Created by veerababu mulugu on 9/27/16.
 //  Copyright © 2016 veerababu m. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "FeedBO.h"
 
-@interface ViewController : UIViewController
-
+@implementation FeedBO
 
 @end
-

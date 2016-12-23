@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "FeedListTableViewController.h"
 
 @interface AppDelegate ()
 
@@ -16,7 +17,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
+    FeedListTableViewController *feedListViewController = (FeedListTableViewController *)navController.viewControllers.firstObject;
+    feedListViewController.managedContext = self.managedObjectContext;
+
     return YES;
 }
 
@@ -104,7 +109,8 @@
     if (!coordinator) {
         return nil;
     }
-    _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+//    _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSMainQueueConcurrencyType];
+    _managedObjectContext = [[NSManagedObjectContext alloc] initWithConcurrencyType:NSPrivateQueueConcurrencyType];
     [_managedObjectContext setPersistentStoreCoordinator:coordinator];
     return _managedObjectContext;
 }

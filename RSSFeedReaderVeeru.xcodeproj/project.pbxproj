@@ -9,13 +9,22 @@
 /* Begin PBXBuildFile section */
 		0FFFF3F11D9B82FC0066295A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFF3F01D9B82FC0066295A /* main.m */; };
 		0FFFF3F41D9B82FC0066295A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFF3F31D9B82FC0066295A /* AppDelegate.m */; };
-		0FFFF3F71D9B82FC0066295A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFF3F61D9B82FC0066295A /* ViewController.m */; };
 		0FFFF3FA1D9B82FC0066295A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFFF3F81D9B82FC0066295A /* Main.storyboard */; };
 		0FFFF3FD1D9B82FC0066295A /* RSSFeedReaderVeeru.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFF3FB1D9B82FC0066295A /* RSSFeedReaderVeeru.xcdatamodeld */; };
 		0FFFF3FF1D9B82FC0066295A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0FFFF3FE1D9B82FC0066295A /* Assets.xcassets */; };
 		0FFFF4021D9B82FC0066295A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0FFFF4001D9B82FC0066295A /* LaunchScreen.storyboard */; };
 		0FFFF40D1D9B82FC0066295A /* RSSFeedReaderVeeruTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFF40C1D9B82FC0066295A /* RSSFeedReaderVeeruTests.m */; };
 		0FFFF4181D9B82FC0066295A /* RSSFeedReaderVeeruUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FFFF4171D9B82FC0066295A /* RSSFeedReaderVeeruUITests.m */; };
+		8029E6571D9C3EF100630F33 /* FeedListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E6561D9C3EF100630F33 /* FeedListTableViewController.m */; };
+		8029E65A1D9C3EFC00630F33 /* FeedDetailsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E6591D9C3EFC00630F33 /* FeedDetailsTableViewController.m */; };
+		8029E65D1D9C47E800630F33 /* DataAccessHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E65C1D9C47E800630F33 /* DataAccessHelper.m */; };
+		8029E6601D9C53A100630F33 /* DataParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E65F1D9C53A100630F33 /* DataParser.m */; };
+		8029E6631D9C53AF00630F33 /* FeedBO.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E6621D9C53AF00630F33 /* FeedBO.m */; };
+		8029E66E1D9C580000630F33 /* Feed+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E66B1D9C580000630F33 /* Feed+CoreDataProperties.m */; };
+		8029E66F1D9C580000630F33 /* Feed.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E66D1D9C580000630F33 /* Feed.m */; };
+		8029E6721D9C5F0F00630F33 /* CoreDateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E6711D9C5F0F00630F33 /* CoreDateManager.m */; };
+		8029E6751D9C7C2800630F33 /* FeedListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E6741D9C7C2800630F33 /* FeedListTableViewCell.m */; };
+		8029E6781D9C7C3E00630F33 /* FeedDetailHeaderTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8029E6771D9C7C3E00630F33 /* FeedDetailHeaderTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,8 +49,6 @@
 		0FFFF3F01D9B82FC0066295A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0FFFF3F21D9B82FC0066295A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		0FFFF3F31D9B82FC0066295A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		0FFFF3F51D9B82FC0066295A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		0FFFF3F61D9B82FC0066295A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		0FFFF3F91D9B82FC0066295A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0FFFF3FC1D9B82FC0066295A /* RSSFeedReaderVeeru.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = RSSFeedReaderVeeru.xcdatamodel; sourceTree = "<group>"; };
 		0FFFF3FE1D9B82FC0066295A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +60,26 @@
 		0FFFF4131D9B82FC0066295A /* RSSFeedReaderVeeruUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RSSFeedReaderVeeruUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0FFFF4171D9B82FC0066295A /* RSSFeedReaderVeeruUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RSSFeedReaderVeeruUITests.m; sourceTree = "<group>"; };
 		0FFFF4191D9B82FC0066295A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8029E6551D9C3EF100630F33 /* FeedListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedListTableViewController.h; sourceTree = "<group>"; };
+		8029E6561D9C3EF100630F33 /* FeedListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedListTableViewController.m; sourceTree = "<group>"; };
+		8029E6581D9C3EFC00630F33 /* FeedDetailsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailsTableViewController.h; sourceTree = "<group>"; };
+		8029E6591D9C3EFC00630F33 /* FeedDetailsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailsTableViewController.m; sourceTree = "<group>"; };
+		8029E65B1D9C47E800630F33 /* DataAccessHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataAccessHelper.h; sourceTree = "<group>"; };
+		8029E65C1D9C47E800630F33 /* DataAccessHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataAccessHelper.m; sourceTree = "<group>"; };
+		8029E65E1D9C53A100630F33 /* DataParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataParser.h; sourceTree = "<group>"; };
+		8029E65F1D9C53A100630F33 /* DataParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataParser.m; sourceTree = "<group>"; };
+		8029E6611D9C53AF00630F33 /* FeedBO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedBO.h; sourceTree = "<group>"; };
+		8029E6621D9C53AF00630F33 /* FeedBO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedBO.m; sourceTree = "<group>"; };
+		8029E66A1D9C580000630F33 /* Feed+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Feed+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8029E66B1D9C580000630F33 /* Feed+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Feed+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8029E66C1D9C580000630F33 /* Feed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Feed.h; sourceTree = "<group>"; };
+		8029E66D1D9C580000630F33 /* Feed.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Feed.m; sourceTree = "<group>"; };
+		8029E6701D9C5F0F00630F33 /* CoreDateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDateManager.h; sourceTree = "<group>"; };
+		8029E6711D9C5F0F00630F33 /* CoreDateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDateManager.m; sourceTree = "<group>"; };
+		8029E6731D9C7C2800630F33 /* FeedListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedListTableViewCell.h; sourceTree = "<group>"; };
+		8029E6741D9C7C2800630F33 /* FeedListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedListTableViewCell.m; sourceTree = "<group>"; };
+		8029E6761D9C7C3E00630F33 /* FeedDetailHeaderTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedDetailHeaderTableViewCell.h; sourceTree = "<group>"; };
+		8029E6771D9C7C3E00630F33 /* FeedDetailHeaderTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedDetailHeaderTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,8 +132,26 @@
 			children = (
 				0FFFF3F21D9B82FC0066295A /* AppDelegate.h */,
 				0FFFF3F31D9B82FC0066295A /* AppDelegate.m */,
-				0FFFF3F51D9B82FC0066295A /* ViewController.h */,
-				0FFFF3F61D9B82FC0066295A /* ViewController.m */,
+				8029E6551D9C3EF100630F33 /* FeedListTableViewController.h */,
+				8029E6561D9C3EF100630F33 /* FeedListTableViewController.m */,
+				8029E6581D9C3EFC00630F33 /* FeedDetailsTableViewController.h */,
+				8029E6591D9C3EFC00630F33 /* FeedDetailsTableViewController.m */,
+				8029E6731D9C7C2800630F33 /* FeedListTableViewCell.h */,
+				8029E6741D9C7C2800630F33 /* FeedListTableViewCell.m */,
+				8029E6761D9C7C3E00630F33 /* FeedDetailHeaderTableViewCell.h */,
+				8029E6771D9C7C3E00630F33 /* FeedDetailHeaderTableViewCell.m */,
+				8029E65B1D9C47E800630F33 /* DataAccessHelper.h */,
+				8029E65C1D9C47E800630F33 /* DataAccessHelper.m */,
+				8029E65E1D9C53A100630F33 /* DataParser.h */,
+				8029E65F1D9C53A100630F33 /* DataParser.m */,
+				8029E6611D9C53AF00630F33 /* FeedBO.h */,
+				8029E6621D9C53AF00630F33 /* FeedBO.m */,
+				8029E66A1D9C580000630F33 /* Feed+CoreDataProperties.h */,
+				8029E66B1D9C580000630F33 /* Feed+CoreDataProperties.m */,
+				8029E66C1D9C580000630F33 /* Feed.h */,
+				8029E66D1D9C580000630F33 /* Feed.m */,
+				8029E6701D9C5F0F00630F33 /* CoreDateManager.h */,
+				8029E6711D9C5F0F00630F33 /* CoreDateManager.m */,
 				0FFFF3F81D9B82FC0066295A /* Main.storyboard */,
 				0FFFF3FE1D9B82FC0066295A /* Assets.xcassets */,
 				0FFFF4001D9B82FC0066295A /* LaunchScreen.storyboard */,
@@ -273,10 +318,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FFFF3F71D9B82FC0066295A /* ViewController.m in Sources */,
+				8029E6721D9C5F0F00630F33 /* CoreDateManager.m in Sources */,
+				8029E6751D9C7C2800630F33 /* FeedListTableViewCell.m in Sources */,
+				8029E6631D9C53AF00630F33 /* FeedBO.m in Sources */,
+				8029E6571D9C3EF100630F33 /* FeedListTableViewController.m in Sources */,
+				8029E66E1D9C580000630F33 /* Feed+CoreDataProperties.m in Sources */,
+				8029E65A1D9C3EFC00630F33 /* FeedDetailsTableViewController.m in Sources */,
 				0FFFF3FD1D9B82FC0066295A /* RSSFeedReaderVeeru.xcdatamodeld in Sources */,
+				8029E66F1D9C580000630F33 /* Feed.m in Sources */,
+				8029E6601D9C53A100630F33 /* DataParser.m in Sources */,
 				0FFFF3F41D9B82FC0066295A /* AppDelegate.m in Sources */,
 				0FFFF3F11D9B82FC0066295A /* main.m in Sources */,
+				8029E65D1D9C47E800630F33 /* DataAccessHelper.m in Sources */,
+				8029E6781D9C7C3E00630F33 /* FeedDetailHeaderTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +554,7 @@
 				0FFFF41E1D9B82FC0066295A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FFFF41F1D9B82FC0066295A /* Build configuration list for PBXNativeTarget "RSSFeedReaderVeeruTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +563,7 @@
 				0FFFF4211D9B82FC0066295A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0FFFF4221D9B82FC0066295A /* Build configuration list for PBXNativeTarget "RSSFeedReaderVeeruUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +572,7 @@
 				0FFFF4241D9B82FC0066295A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
